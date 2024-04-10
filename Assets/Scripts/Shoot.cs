@@ -19,7 +19,9 @@ public class Shoot : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0)) {
             transform.GetPositionAndRotation(out Vector3 origin, out Quaternion rotation);
-            Instantiate(bulletObject, origin, rotation);
+            Vector3 offset = transform.TransformDirection(new Vector3(0,0.5f,3));
+
+            Instantiate(bulletObject, origin + offset, rotation);
             Debug.Log("SE PRESIONO EL BOTON");
 
 
