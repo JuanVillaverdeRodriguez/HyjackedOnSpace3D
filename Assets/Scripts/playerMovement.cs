@@ -7,8 +7,9 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 
+
 [RequireComponent(typeof(CharacterController))]
-public class playerMovement1 : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public Camera playerCamera;
@@ -18,7 +19,7 @@ public class playerMovement1 : MonoBehaviour
     public float dashSpeed = 30F;
     /*-------------------------------------------------------------------------------------------*/
     public float jumpPower = 9f;
-    public float gravity = 20f;
+    public float gravity = 20f; 
     public float lookSpeed = 2f;
     public float lookXLimit = 90f;
     public float defaultHeight = 2f;
@@ -197,4 +198,5 @@ public class playerMovement1 : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
+    
 }

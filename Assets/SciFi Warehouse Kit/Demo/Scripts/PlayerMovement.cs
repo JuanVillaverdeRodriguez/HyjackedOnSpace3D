@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementDemo : MonoBehaviour
 {
 
     public CharacterController controller;
@@ -55,6 +56,11 @@ public class PlayerMovement : MonoBehaviour
                 }
              }
          }
+
+    internal void Heal(int v)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 
