@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - PasarelaMovil
+  - Door
+>>>>>>> d66ee35 (Añadido trigger puertas y cerrado de estas)
   layers:
   - Default
   - TransparentFX
