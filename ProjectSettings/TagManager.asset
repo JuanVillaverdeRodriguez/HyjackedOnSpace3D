@@ -9,7 +9,11 @@ TagManager:
   tags:
   - PasarelaMovil
   - Door
+<<<<<<< HEAD
 >>>>>>> d66ee35 (Añadido trigger puertas y cerrado de estas)
+=======
+  - ExitDoor
+>>>>>>> bbe46e2 (Añadido material BLACK al deadFloor)
   layers:
   - Default
   - TransparentFX
