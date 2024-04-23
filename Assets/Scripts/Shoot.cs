@@ -22,9 +22,7 @@ public class Shoot : MonoBehaviour
             Vector3 offset = transform.TransformDirection(new Vector3(0,0.5f,3));
 
             Instantiate(bulletObject, origin + offset, rotation);
-            Debug.Log("SE PRESIONO EL BOTON");
-
-
+            Debug.Log("SE PRESIONO EL BOTON MAGICO");
         }
         
     }
