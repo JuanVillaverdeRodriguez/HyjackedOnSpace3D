@@ -883,8 +883,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1075507191}
   - component: {fileID: 1075507193}
-  - component: {fileID: 1075507195}
   - component: {fileID: 1075507194}
+  - component: {fileID: 1075507196}
+  - component: {fileID: 1075507195}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -966,11 +967,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075507190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0c806926803714d93e2a415f3cdc2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e06782374b15aca6a4fe09540963a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingCooldown: 3
-  bulletObject: {fileID: 4867466122894315360, guid: 75c7dbf0df7bf0f43b09ea32e2d8d7d3, type: 3}
+  Gun: 1
+  GunParent: {fileID: 963194228}
+  Guns:
+  - {fileID: 11400000, guid: 70c9b7f41a2c813159418be5b87b2375, type: 2}
+  - {fileID: 11400000, guid: a5d75b618df34028db4e8d999bb8fe65, type: 2}
+  ActiveGun: {fileID: 0}
+--- !u!114 &1075507196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075507190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7345a95a74fc6e808487d3187909618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunSelector: {fileID: 1075507195}
+  AutoReload: 1
 --- !u!1 &1202284529
 GameObject:
   m_ObjectHideFlags: 0
