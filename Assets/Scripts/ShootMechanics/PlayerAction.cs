@@ -9,6 +9,8 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private GunSelector GunSelector;
     [SerializeField]
+    private PlayerInventory playerInventory;
+    [SerializeField]
     private bool AutoReload = true;
     private bool IsReloading = false;
     private void Update()

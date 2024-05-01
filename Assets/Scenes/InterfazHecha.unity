@@ -2156,17 +2156,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075507190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b04ed203d9ffb6ba72a4bc5b2652c9, type: 3}
+  m_Script: {fileID: 11500000, guid: d142883b2e786cb2dbe929ade1479a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 963194227}
-  walkSpeed: 12
-  runSpeed: 12
+  walkSpeed: 6
+  runSpeed: 9
   dashSpeed: 30
-  jumpPower: 7
-  gravity: 10
+  jumpPower: 9
+  gravity: 20
   lookSpeed: 2
-  lookXLimit: 45
+  lookXLimit: 90
   defaultHeight: 2
   crouchHeight: 1
   crouchSpeed: 3
