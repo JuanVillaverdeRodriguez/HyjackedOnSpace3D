@@ -11,9 +11,9 @@ public class RangeEnemyState_Conditions
     private NavMeshAgent _navMeshAgent;
     private RangeEnemyReferences _enemy;
 
-    private float _maxChaseDistance = 10f;
+    private float _maxChaseDistance = 50f; // Si te alejas mas de esto pasa a idle
 
-    private float _maxAttackDistance = 5f;
+    private float _maxAttackDistance = 20f; // Si te alejas mas de esto pasa a chase
 
     public RangeEnemyState_Conditions(RangeEnemyReferences enemy) {
         _player = GameObject.FindWithTag("Player");
