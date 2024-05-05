@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1461e122ae3256946b62dd4a4862abe1, type: 3}
   m_Name: SurfaceEffectTest
   m_EditorClassIdentifier: 
-  SpawnObjectEffects: []
+  SpawnObjectEffects:
+  - {fileID: 11400000, guid: 2aa9781348cacc2c88d0dfba5a775adc, type: 2}
   PlayAudioEffects: []

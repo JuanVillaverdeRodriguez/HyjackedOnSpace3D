@@ -245,8 +245,8 @@ public class GunScriptableObject : ScriptableObject
             ActiveMonoBehaviour.StartCoroutine(DelayedDisableTrail(trail));
         }
 
-        Bullet.gameObject.SetActive(false);
-        BulletPool.Release(Bullet);
+        //Bullet.gameObject.SetActive(false);
+        //BulletPool.Release(Bullet);
 
         if(Collision !=  null)
         {

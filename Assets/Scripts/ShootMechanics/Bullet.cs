@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
         get; private set;
     }
     [SerializeField]
-    private float DelayedDisableTime = 2f;
+    private float DelayedDisableTime = 10f;
     public delegate void CollisionEvent(Bullet Bullet, Collision Collision);
     public event CollisionEvent OnCollision;
 
@@ -52,6 +52,7 @@ public class Bullet : MonoBehaviour
 
     private void OnDisable()
     {
+        Debug.Log("DISABLE");
         // Reset everything
         StopAllCoroutines();
         Rigidbody.velocity = Vector3.zero;
@@ -69,7 +70,7 @@ public class Bullet : MonoBehaviour
     {
         destroyTimer -= Time.deltaTime;
         if (destroyTimer <= 0) {
-            destroyTimer = 5f;
+            destroyTimer = 1000f;
             //gameObject.SetActive(false);
         }
         
