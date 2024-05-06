@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pasarelaOrdenador : MonoBehaviour
+public class pasarelaOrdenador : MonoBehaviour, Interactable
 {
     [SerializeField] private string _prompt;
 

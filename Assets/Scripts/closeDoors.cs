@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class closeDoors : MonoBehaviour
 {
-    private float translate = -10f;
     private float rate = -9f;
     private float count = 0.0f;
     private bool closing = false;
