@@ -7,6 +7,17 @@ public class closeDoors : MonoBehaviour
     private float rate = -9f;
     private float count = 0.0f;
     private bool closing = false;
+    private GameObject enemies;
+
+    void Start(){
+        enemies = GameObject.Find("Mapita/Sala3/EnemiesSala3");
+        if(enemies == null)
+        {
+            Debug.Log("ENEMIES NULL");
+            return;
+        }
+        enemies.SetActive(false);
+    }
     private void Update()
     {
         if(closing)
@@ -25,17 +36,24 @@ public class closeDoors : MonoBehaviour
             }
             foreach(GameObject door in doors)
             {
-                Debug.Log("Trigger enter door");
                 door.transform.Translate(Vector3.up * Time.deltaTime * rate);
             }
             count += Time.deltaTime * rate;
         }else{
+            this.gameObject.SetActive(false);
             count = 0.0f;
             closing = false;
         }
     }
     private void OnTriggerEnter(Collider collider)
     {
+        /*int childs = enemies.transform.childCunt;
+        for (int i = 0;i< childs; i++)
+        {
+            enemies.transform.GetChild(i).GameObject.SetActive(true);
+        }*/
+        enemies.SetActive(true);
         closing = true;
+        Debug.Log("TRIGGER ENTER");
     }
 }
