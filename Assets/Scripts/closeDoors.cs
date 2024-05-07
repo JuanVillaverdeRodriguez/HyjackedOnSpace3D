@@ -27,7 +27,7 @@ public class closeDoors : MonoBehaviour
     }
     private void close()
     {
-        if(count > -10f){
+        if(count > -20f){
             GameObject[] doors;
             doors = GameObject.FindGameObjectsWithTag("Door");
             if(doors == null)
@@ -40,7 +40,12 @@ public class closeDoors : MonoBehaviour
             }
             count += Time.deltaTime * rate;
         }else{
+            Debug.Log("Deactivating");
             this.gameObject.SetActive(false);
+            GameObject door = GameObject.Find("TriggerDoors2");
+            if(door != null){
+                door.SetActive(false);
+            }
             count = 0.0f;
             closing = false;
         }

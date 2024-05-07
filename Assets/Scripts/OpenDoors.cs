@@ -39,7 +39,7 @@ public class OpenDoors : MonoBehaviour, Interactable
     }
     private void open()
     {
-        if(count < 10f){
+        if(count < 20f){
             GameObject[] doors;
             GameObject[] ExitDoors;
             doors = GameObject.FindGameObjectsWithTag("Door");
