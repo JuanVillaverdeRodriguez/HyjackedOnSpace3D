@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SpawnObjectEffect
   m_EditorClassIdentifier: 
   Prefab: {fileID: 1096893136476370, guid: 24b82347924701148a13c746edfb6b22, type: 3}
-  Probability: 1
+  Probability: 0
   RandomizeRotation: 0
   RandomizedRotationMultiplier: {x: 0, y: 0, z: 0}

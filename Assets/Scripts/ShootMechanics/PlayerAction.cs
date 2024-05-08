@@ -16,7 +16,7 @@ public class PlayerAction : MonoBehaviour
     private void Update()
     {
         GunSelector.ActiveGun.Tick(
-            Application.isFocused && Input.GetMouseButtonDown(0) && GunSelector.ActiveGun != null
+            Application.isFocused && Input.GetMouseButton(0) && GunSelector.ActiveGun != null
         );
         if (ShouldManualReload() || ShouldAutoReload())
         {
