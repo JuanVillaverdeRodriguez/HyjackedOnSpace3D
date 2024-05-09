@@ -15,7 +15,7 @@ public class EnemyShootController : MonoBehaviour
     public int damage;
 
     void Awake() {
-        _objectPool = new ObjectPool<Bullet>(CreateBullet);
+        _objectPool = new ObjectPool<Bullet>(CreateBullet, defaultCapacity: amountOfBulletsToPool, maxSize: amountOfBulletsToPool);
         //_objectPool.setPoolObject(bulletObject, amountOfBulletsToPool);
     }
     public void shoot(Vector3 playerPosition) {
@@ -47,13 +47,21 @@ public class EnemyShootController : MonoBehaviour
     {
         if(Collision !=  null)
         {
+
             ContactPoint contactPoint = Collision.GetContact(0);
 
             if(contactPoint.otherCollider.TryGetComponent(out IDamageable damageable))
             {
                 damageable.TakeDamage(damage);
             }
+            bullet.gameObject.SetActive(false);
+
+            _objectPool.Release(bullet);
+
         }
+    }
+    private void OnDestroy() {
+        _objectPool.Dispose();
     }
 
 }

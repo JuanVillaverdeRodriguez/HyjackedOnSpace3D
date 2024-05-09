@@ -32,7 +32,7 @@ public class RangeEnemyState_Shoot : IState
     }
     public void Tick()
     {
-        _navMeshAgent.transform.LookAt(_player.transform.position);
+        _navMeshAgent.transform.LookAt(new Vector3(_player.transform.position.x, _navMeshAgent.transform.position.y, _player.transform.transform.position.z));
         
         _shootingCooldown -= Time.deltaTime;
         if (_shootingCooldown <= 0) {
