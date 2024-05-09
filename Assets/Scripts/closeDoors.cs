@@ -57,8 +57,10 @@ public class closeDoors : MonoBehaviour
         {
             enemies.transform.GetChild(i).GameObject.SetActive(true);
         }*/
-        enemies.SetActive(true);
-        closing = true;
-        Debug.Log("TRIGGER ENTER");
+        if (collider.gameObject.tag == "Player"){
+            enemies.SetActive(true);
+            closing = true;
+            Debug.Log("TRIGGER ENTER");
+        }
     }
 }

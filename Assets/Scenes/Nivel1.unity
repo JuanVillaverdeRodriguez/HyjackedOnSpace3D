@@ -2181,6 +2181,7 @@ GameObject:
   - component: {fileID: 102224089}
   - component: {fileID: 102224088}
   - component: {fileID: 102224087}
+  - component: {fileID: 102224091}
   m_Layer: 0
   m_Name: EndLevelTrigger
   m_TagString: Untagged
@@ -2203,7 +2204,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2229,7 +2230,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 796f2ac6205af8b148e9f77400cbb9a6, type: 2}
+  - {fileID: 2100000, guid: 8a46f47768658a445819d08673383b77, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2274,6 +2275,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1732081921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102224091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102224086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57a3ed8777740b86ada190c33467f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &102520542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51134,6 +51147,7 @@ GameObject:
   - component: {fileID: 1724306444}
   - component: {fileID: 1724306443}
   - component: {fileID: 1724306442}
+  - component: {fileID: 1724306446}
   m_Layer: 0
   m_Name: EndLevelTrigger
   m_TagString: Untagged
@@ -51156,7 +51170,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -51182,7 +51196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 796f2ac6205af8b148e9f77400cbb9a6, type: 2}
+  - {fileID: 2100000, guid: 8a46f47768658a445819d08673383b77, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51227,6 +51241,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 141743748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724306446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724306441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57a3ed8777740b86ada190c33467f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1726910299
 PrefabInstance:
   m_ObjectHideFlags: 0
