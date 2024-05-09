@@ -35,7 +35,7 @@ public class RangeEnemyState_Chase : IState
     public void Tick()
     {
         _updateTargetingDelay -= Time.deltaTime;
-        if (_updateTargetingDelay <= 0) {
+        if (_updateTargetingDelay <= 0 && !_navMeshAgent.isStopped) {
             _updateTargetingDelay = 0.2f;
             
             _navMeshAgent.SetDestination(_player.transform.position);
