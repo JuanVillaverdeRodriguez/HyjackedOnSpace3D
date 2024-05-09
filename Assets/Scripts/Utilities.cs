@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+using System.Reflection;
+
+public class Utilities
+{
+    public static void CopyValues<T>(T Base, T Copy)
+    {
+        Type type = Base.GetType();
+        foreach(FieldInfo field in type.GetFields())
+        {
+            field.SetValue(Copy, field.GetValue(Base));
+        }
+    }
+}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Ammo Config", menuName = "Guns/Ammo Config", order = 3)]
-public class AmmoConfigScriptableObject : ScriptableObject
+public class AmmoConfigScriptableObject : ScriptableObject, System.ICloneable
 {
     public int MaxAmmo = 120;
     public int ClipSize = 30;
@@ -26,5 +26,26 @@ public class AmmoConfigScriptableObject : ScriptableObject
     public bool CanReload()
     {
         return CurrentClipAmmo < ClipSize && CurrentAmmo > 0;
+    }
+
+    public void AddAmmo(int Amount)
+    {
+        if (CurrentAmmo + Amount > MaxAmmo)
+        {
+            CurrentAmmo = MaxAmmo;
+        }
+        else
+        {
+            CurrentAmmo += Amount;
+        }
+    }
+
+    public object Clone()
+    {
+        AmmoConfigScriptableObject config = CreateInstance<AmmoConfigScriptableObject>();
+
+        Utilities.CopyValues(this, config);
+
+        return config;
     }
 }

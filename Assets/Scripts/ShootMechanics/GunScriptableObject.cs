@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 
 [CreateAssetMenu(fileName = "Gun", menuName = "Guns/Gun", order = 0)]
-public class GunScriptableObject : ScriptableObject
+public class GunScriptableObject : ScriptableObject, System.ICloneable
 {
     public ImpactType ImpactType;
     public GunType Type;
@@ -52,6 +52,19 @@ public class GunScriptableObject : ScriptableObject
         }
     }
 
+    public void Despawn()
+    {
+        Model.SetActive(false);
+        Destroy(Model);
+        TrailPool.Clear();
+        if (BulletPool != null)
+        {
+            BulletPool.Clear();
+        }
+
+        ShootingAudioSource = null;
+        ShootSystem = null;
+    }
     private void TryToShoot()
     {
         /*
@@ -298,6 +311,27 @@ public class GunScriptableObject : ScriptableObject
         trail.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
         return trail;
+    }
+
+    public object Clone()
+    {
+        GunScriptableObject config = CreateInstance<GunScriptableObject>();
+
+        config.ImpactType = ImpactType;
+        config.Type = Type;
+        config.Name = Name;
+        config.name = name;
+        config.DamageConfig = DamageConfig.Clone() as DamageConfigScriptableObject;
+        config.ShootConfig = ShootConfig.Clone() as ShootConfigScriptableObject;
+        config.AmmoConfig = AmmoConfig.Clone() as AmmoConfigScriptableObject;
+        config.TrailConfig = TrailConfig.Clone() as TrailConfigScriptableObject;
+        config.AudioConfig = AudioConfig.Clone() as AudioConfigScriptableObject;
+            
+        config.ModelPrefab = ModelPrefab;
+        config.SpwanPoint = SpwanPoint;
+        config.SpawnRotation = SpawnRotation;
+
+        return config;
     }
 
     private Bullet CreateBullet()
