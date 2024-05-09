@@ -11,7 +11,7 @@ public class GrenadePickUpTrigger : MonoBehaviour
             PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
             if (playerInventory != null)
             {
-                playerInventory.GetGrenades(2);
+                //playerInventory.GetGrenades(2);
                 gameObject.SetActive(false);
             }
         }

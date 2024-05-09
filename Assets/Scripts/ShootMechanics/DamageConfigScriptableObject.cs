@@ -15,6 +15,8 @@ public class DamageConfigScriptableObject : ScriptableObject, System.ICloneable
     {
         DamageConfigScriptableObject config = CreateInstance<DamageConfigScriptableObject>();
 
+        config.damage = damage;
+
         return config;
     }
 }

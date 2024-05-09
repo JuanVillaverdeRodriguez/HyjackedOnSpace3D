@@ -11,7 +11,7 @@ public class HealthPickUpTrigger : MonoBehaviour
             PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
             if (playerInventory != null)
             {
-                playerInventory.Heal(2);
+                //playerInventory.Heal(2);
                 gameObject.SetActive(false);
             }
         }

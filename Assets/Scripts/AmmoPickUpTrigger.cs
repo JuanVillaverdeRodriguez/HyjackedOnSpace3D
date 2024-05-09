@@ -11,7 +11,7 @@ public class AmmoPickUpTrigger : MonoBehaviour
             PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
             if (playerInventory != null)
             {
-                playerInventory.GetAmmo(2);
+                //playerInventory.GetAmmo(2);
                 gameObject.SetActive(false);
             }
         }

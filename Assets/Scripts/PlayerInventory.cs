@@ -7,40 +7,33 @@ using UnityEngine.UI;
 public class PlayerInventory : MonoBehaviour
 {
 
-    private float health;
-    private int pistolAmmo;
-    private int ammoMagazine;
-    private int grenadeAmmo;
-    private float healthMax;
-    private int pistolAmmoMax;
-    private int grenadeAmmoMax;
-    private int ammoMagazineMax;
+    //[SerializeField]
+    //public PlayerHealth playerHealth;
+    [SerializeField]
+    public GunSelector gunSelector;
     public TextMeshProUGUI healthText;
-    public TextMeshProUGUI ammoText;
-    public TextMeshProUGUI grenadeText;
-    public TextMeshProUGUI ammoMaxText;
-    public TextMeshProUGUI grenadeMaxText;
-    public TextMeshProUGUI magazineText;
-    
+    public TextMeshProUGUI AmmoText;
 
-    private void Start()
+/*
+    private void Awake()
     {
-        healthMax = 100;
-        pistolAmmoMax = 50;
-        ammoMagazineMax = 500;
-        grenadeAmmoMax = 10;
-        health = 99;
-        pistolAmmo = 49;
-        grenadeAmmo = 9;
-        ammoMagazine = 499;
-        healthText.text = health.ToString();
-        ammoText.text = pistolAmmo.ToString();
-        grenadeText.text = grenadeAmmo.ToString();
-        ammoMaxText.text = pistolAmmoMax.ToString();
-        grenadeMaxText.text = grenadeAmmoMax.ToString();
-        magazineText.text = ammoMagazine.ToString();
-    }
+        healthText = GetComponent<TextMeshProUGUI>();
+        AmmoText= GetComponent<TextMeshProUGUI>();
+    }*/
 
+    private void Update()
+    {
+        /*
+        healthText.SetText(
+            $"{playerHealth.getHealth}"
+        );
+        */
+        AmmoText.SetText(
+            $"{gunSelector.ActiveGun.AmmoConfig.CurrentClipAmmo} / "+
+            $"{gunSelector.ActiveGun.AmmoConfig.CurrentAmmo}"
+        );
+    }
+    /*
     public void Heal(int heal_num)
     {
         Debug.Log("Curado: " + heal_num);
@@ -111,6 +104,6 @@ public class PlayerInventory : MonoBehaviour
         grenadeAmmo -= grenades_num;
         grenadeText.text = grenadeAmmo.ToString();
     }
-
+*/
 
 }
