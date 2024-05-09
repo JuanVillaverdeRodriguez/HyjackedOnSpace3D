@@ -52,7 +52,7 @@ public class Bullet : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("DISABLE");
+        //Debug.Log("DISABLE");
         // Reset everything
         StopAllCoroutines();
         Rigidbody.velocity = Vector3.zero;

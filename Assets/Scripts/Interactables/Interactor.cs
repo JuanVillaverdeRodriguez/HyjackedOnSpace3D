@@ -29,8 +29,6 @@ public class Interactor : MonoBehaviour
         _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position,
             _interactionPointRadius, _colliders,_interactableMask);
 
-        
-        
         if(_numFound > 0){
             _canInteractText.enabled = true;
             var interactable = _colliders[0].GetComponent<Interactable>();
@@ -52,7 +50,7 @@ public class Interactor : MonoBehaviour
             }
         }
         else {
-            _canInteractText.enabled = false;
+            //_canInteractText.enabled = false;
         }
     
     }

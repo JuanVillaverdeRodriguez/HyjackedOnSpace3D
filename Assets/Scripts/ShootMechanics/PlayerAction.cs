@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [DisallowMultipleComponent]
@@ -13,6 +14,14 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private bool AutoReload = true;
     private bool IsReloading = false;
+    public PlayerHealth health;
+    public IDamageable Damageable;
+
+    private void OnEnable()
+    {
+        Damageable.OnDeath += Player_OnDeath;
+    }
+
     private void Update()
     {
         GunSelector.ActiveGun.Tick(
@@ -42,5 +51,11 @@ public class PlayerAction : MonoBehaviour
             && GunSelector.ActiveGun.AmmoConfig.CurrentClipAmmo == 0
             && GunSelector.ActiveGun.CanReload();
 
+    }
+
+    private void Player_OnDeath(Vector3 Position)
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }

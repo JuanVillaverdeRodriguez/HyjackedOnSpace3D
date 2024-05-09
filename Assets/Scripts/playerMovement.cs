@@ -137,12 +137,12 @@ public class PlayerMovement : MonoBehaviour
         /*-------------------------------------------------------------------------------------------*/
 
         float movementDirectionY = moveDirection.y;
-        Debug.Log(moveDirection);
+        //Debug.Log(moveDirection);
         if (canMove)
         {
             moveDirection = (forward * curSpeedX) + (right * curSpeedY);
         }
-        Debug.Log(moveDirection);
+        //Debug.Log(moveDirection);
         /* Codigo nuevo -----------------------------------------------------------------------------*/
         if (moveDirection.x == 0 && moveDirection.z == 0) { lockedRun = false; }
         /*-------------------------------------------------------------------------------------------*/

@@ -1770,6 +1770,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1566183956}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &79230198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 5d640b36265eadc4a87d38682a77f08e, type: 3}
@@ -4518,6 +4519,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1696513967}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &175964220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5615,6 +5617,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 169258418}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!4 &206683349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8969971835649028076, guid: 4e661a4b9cf2fac4dbc610ceb59e77b8, type: 3}
@@ -6193,10 +6196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c48f2c5b368ccfb469cf1e08e5068810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObject: {fileID: 996281520135879971, guid: 945f09ce6719bd644a28e9fd9a9d69a4, type: 3}
+  bulletObject: {fileID: 8371997948982338393, guid: 945f09ce6719bd644a28e9fd9a9d69a4, type: 3}
   bulletSpawnPoint: {fileID: 2032606490}
-  shootingForce: 0
-  amountOfBulletsToPool: 0
+  shootingForce: 1000
+  amountOfBulletsToPool: 15
+  damage: 0
 --- !u!114 &220858515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10477,6 +10481,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1627849391}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &391314507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12148,6 +12153,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1729240836}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &443225294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19949,6 +19955,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1304982412}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &717823119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20640,6 +20647,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1459280835}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &738583894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22539,6 +22547,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1897305108}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &790714295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6568706143511174688, guid: 5bba62d8b65dae44898012275d24ba9e, type: 3}
@@ -22637,6 +22646,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1445249151}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &792062370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23541,6 +23551,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 384414801}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &839346680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25562,6 +25573,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 625258703}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &920985231
 GameObject:
   m_ObjectHideFlags: 0
@@ -26226,6 +26238,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 661888209}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &939463633
 GameObject:
   m_ObjectHideFlags: 0
@@ -28012,6 +28025,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 920985231}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &999729215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29350,6 +29364,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 748955601}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &1029944991
 GameObject:
   m_ObjectHideFlags: 0
@@ -29838,6 +29853,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1957635011}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1045229853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30451,6 +30467,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 340367209}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1064948296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31122,6 +31139,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1936627345}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1073871098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37259,6 +37277,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1940239826}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1296570618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37703,6 +37722,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1598409055}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!4 &1299782976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5725000371507048362, guid: b2452a5c2cd649a4db9eebcd16f7b155, type: 3}
@@ -39217,6 +39237,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 2043407356}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1353599243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40160,6 +40181,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1600290443}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1399425255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41207,6 +41229,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1130910751}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1430098067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43881,6 +43904,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 939463633}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1523329531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44413,6 +44437,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 337234713}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1534590828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44783,6 +44808,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 807584090}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1537580087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46562,6 +46588,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 425632060}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1 &1591939338
 GameObject:
   m_ObjectHideFlags: 0
@@ -48815,6 +48842,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 2130995431}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1660598707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52742,6 +52770,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1647128744}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!4 &1785852129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8969971835649028076, guid: 4e661a4b9cf2fac4dbc610ceb59e77b8, type: 3}
@@ -54047,6 +54076,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1154354153}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!4 &1818558062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5725000371507048362, guid: b2452a5c2cd649a4db9eebcd16f7b155, type: 3}
@@ -56172,6 +56202,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 722322287}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1873920978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56882,6 +56913,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1050767582}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1892544823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57728,6 +57760,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 613535953}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &1921243355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60337,6 +60370,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 969040403}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &2024649261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61979,6 +62013,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 191020568}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &2086432637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62823,6 +62858,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 1801459353}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &2107570470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62990,6 +63026,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 779983476}
   shootingForce: 0
   amountOfBulletsToPool: 0
+  damage: 0
 --- !u!1001 &2113071344
 PrefabInstance:
   m_ObjectHideFlags: 0

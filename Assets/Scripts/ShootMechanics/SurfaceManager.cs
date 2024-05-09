@@ -43,6 +43,7 @@ public class SurfaceManager : MonoBehaviour
 
     public void HandleImpact(GameObject HitObject, Vector3 HitPoint, Vector3 HitNormal, ImpactType Impact, int TriangleIndex)
     {
+        Debug.Log($"ImpactEffect en {HitObject}");
         if(HitObject.TryGetComponent<Renderer>(out Renderer renderer))
         {
             Texture activeTexture = GetActiveTextureFromRenderer(renderer, TriangleIndex);
