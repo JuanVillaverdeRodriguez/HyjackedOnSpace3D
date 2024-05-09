@@ -31270,19 +31270,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075507190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b04ed203d9ffb6ba72a4bc5b2652c9, type: 3}
+  m_Script: {fileID: 11500000, guid: b26ec79a25551064d93dac51d4abf426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 963194227}
   walkSpeed: 45
-  runSpeed: 70
-  jumpPower: 7
-  gravity: 10
+  runSpeed: 90
+  dashSpeed: 300
+  jumpPower: 90
+  gravity: 200
   lookSpeed: 2
-  lookXLimit: 45
-  defaultHeight: 2
-  crouchHeight: 1
-  crouchSpeed: 3
+  lookXLimit: 90
+  defaultHeight: 20
+  isJumping: 0
+  holdJump: 0
+  pressedJump: 0
 --- !u!114 &1075507196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31301,6 +31303,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _numFound: 0
+  _canInteractText: {fileID: 0}
 --- !u!114 &1075507197
 MonoBehaviour:
   m_ObjectHideFlags: 0
