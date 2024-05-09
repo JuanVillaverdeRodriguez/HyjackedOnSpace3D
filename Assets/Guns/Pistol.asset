@@ -16,7 +16,7 @@ MonoBehaviour:
   Type: 0
   Name: Pistol
   ModelPrefab: {fileID: 101050, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
-  SpwanPoint: {x: 0.2700005, y: -0.34, z: 0.1490002}
+  SpwanPoint: {x: 0.48, y: -0.34, z: 0.5}
   SpawnRotation: {x: 0, y: 0, z: 0}
   AmmoConfig: {fileID: 11400000, guid: afa40e493820214809b98c2fbc0be286, type: 2}
   DamageConfig: {fileID: 11400000, guid: 79e00472719eec60f8c071952b42db07, type: 2}

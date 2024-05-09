@@ -14873,6 +14873,7 @@ GameObject:
   - component: {fileID: 538013294}
   - component: {fileID: 538013293}
   - component: {fileID: 538013292}
+  - component: {fileID: 538013295}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14890,7 +14891,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.01, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalScale: {x: 2, y: 3.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1780748347}
@@ -14968,6 +14969,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538013290}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &538013295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538013290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7cdee408c373a0a6b7f3e58d866f642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MaxHealth: 100
+  _Health: 0
 --- !u!1001 &540602614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32069,7 +32084,7 @@ Transform:
   m_GameObject: {fileID: 1107804584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 2.09, z: 1.81}
+  m_LocalPosition: {x: 0.14, y: -2.29, z: 1.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52786,8 +52801,10 @@ GameObject:
   - component: {fileID: 1780748346}
   - component: {fileID: 1780748345}
   - component: {fileID: 1780748344}
+  - component: {fileID: 1780748349}
+  - component: {fileID: 1780748348}
   m_Layer: 0
-  m_Name: Player (1)
+  m_Name: 'Player '
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52855,8 +52872,8 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 1
+  m_Height: 7
+  m_Radius: 1.2
   m_SlopeLimit: 45
   m_StepOffset: 1
   m_SkinWidth: 0.08
@@ -52872,7 +52889,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.15459043, z: -0, w: 0.9879787}
   m_LocalPosition: {x: 18.4, y: 3.4499998, z: 28.5}
-  m_LocalScale: {x: 1, y: 3.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 538013291}
@@ -52880,6 +52897,40 @@ Transform:
   - {fileID: 1107804585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -17.786, z: 0}
+--- !u!114 &1780748348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780748343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e06782374b15aca6a4fe09540963a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gun: 0
+  GunParent: {fileID: 1805544426}
+  Guns:
+  - {fileID: 11400000, guid: a5d75b618df34028db4e8d999bb8fe65, type: 2}
+  - {fileID: 11400000, guid: 70c9b7f41a2c813159418be5b87b2375, type: 2}
+  ActiveGun: {fileID: 11400000, guid: 70c9b7f41a2c813159418be5b87b2375, type: 2}
+--- !u!114 &1780748349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780748343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7345a95a74fc6e808487d3187909618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunSelector: {fileID: 1780748348}
+  playerInventory: {fileID: 0}
+  AutoReload: 1
+  health: {fileID: 538013295}
 --- !u!4 &1785852129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8969971835649028076, guid: 4e661a4b9cf2fac4dbc610ceb59e77b8, type: 3}
@@ -53791,7 +53842,7 @@ Transform:
   m_GameObject: {fileID: 1805544423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.56, z: 0}
+  m_LocalPosition: {x: 0, y: 2.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -63932,10 +63983,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1780748347}
   - {fileID: 705507995}
   - {fileID: 1269508874}
   - {fileID: 176180155}
   - {fileID: 1972373943}
   - {fileID: 1553808423}
   - {fileID: 2137379783}
-  - {fileID: 1780748347}
