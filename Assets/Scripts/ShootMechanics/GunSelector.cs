@@ -27,15 +27,35 @@ public class GunSelector : MonoBehaviour
             Debug.LogError($"No GunScriptableOBject found for GunType: {gun}");
             return;
         }
-        ActiveGun = gun;
-        gun.Spawn(GunParent, this);
 
-        /*
-        Transform[] allChildren = GunParent.GetComponentsInChildren<Transform>();
-        InverseKinematics.LeftElbowIKTarget = allChildren.FirstOrDefault(child => child.name == "LeftElbow");
-        InverseKinematics.RightElbowIKTarget = allChildren.FirstOrDefault(child => child.name == "RightElbow");
-        InverseKinematics.LeftHandIKTarget = allChildren.FirstOrDefault(child => child.name == "LeftHand");
-        InverseKinematics.RightHandIKTarget = allChildren.FirstOrDefault(child => child.name == "RightHand");
-        */
+        SetupGun(gun);
+    }
+
+    private void SetupGun(GunScriptableObject Gun)
+    {
+        ActiveGun = Gun.Clone() as GunScriptableObject;
+        ActiveGun.Spawn(GunParent, this);
+    }
+
+    private void DespawnGun()
+    {
+        ActiveGun.Despawn();
+        Destroy(ActiveGun);
+    }
+    public void SwapGun(GunType gun)
+    {
+        if (gun != Gun)
+        {
+            Gun = gun;
+            GunScriptableObject new_gun = Guns.Find(gun => gun.Type == Gun);
+            
+            DespawnGun();
+            SetupGun(new_gun);
+        }
+    }
+
+    private void UpdateCrosshair()
+    {
+
     }
 }

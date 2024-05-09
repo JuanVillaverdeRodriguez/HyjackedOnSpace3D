@@ -18,6 +18,16 @@ public class PlayerAction : MonoBehaviour
         GunSelector.ActiveGun.Tick(
             Application.isFocused && Input.GetMouseButton(0) && GunSelector.ActiveGun != null
         );
+
+        if (Input.GetButton("grenade"))
+        {
+            GunSelector.SwapGun(GunType.GrenadeLauncher);
+        }
+        if(Input.GetButton("pistol"))
+        {
+            GunSelector.SwapGun(GunType.Pistol);
+        }
+
         if (ShouldManualReload() || ShouldAutoReload())
         {
             GunSelector.ActiveGun.StartReloading();
