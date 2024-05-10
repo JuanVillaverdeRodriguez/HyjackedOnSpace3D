@@ -1719,6 +1719,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &75509481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4481,6 +4482,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &175809386
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5579,6 +5581,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &203133192
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10344,6 +10347,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &388389029
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12016,6 +12020,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &442928570
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14788,6 +14793,7 @@ GameObject:
   - component: {fileID: 538013293}
   - component: {fileID: 538013292}
   - component: {fileID: 538013295}
+  - component: {fileID: 538013296}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14897,6 +14903,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _MaxHealth: 100
   _Health: 0
+--- !u!114 &538013296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538013290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcbcf6d7220fe97e868a5884a6f3bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &540602614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19833,6 +19851,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &714105891
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20525,6 +20544,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &738278641
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22425,6 +22445,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &785074796
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22524,6 +22545,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &790714300
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23558,6 +23580,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &836655451
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25580,6 +25603,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &919758045
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26245,6 +26269,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &938735021
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27940,6 +27965,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &992842853
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29279,6 +29305,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1029407653
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29768,6 +29795,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1042739011
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30382,6 +30410,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1058438681
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31054,6 +31083,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1072152869
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37078,6 +37108,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1292561026
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37523,6 +37554,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1298044839
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39038,6 +39070,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1352416695
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39982,6 +40015,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1398997860
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41030,6 +41064,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1429621942
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43705,6 +43740,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1519790484
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44238,6 +44274,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1531134598
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44609,6 +44646,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1534645507
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46283,6 +46321,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1588619541
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48537,6 +48576,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1660462124
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -52478,6 +52518,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1777498886
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -52540,7 +52581,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1780748347}
   - component: {fileID: 1780748346}
-  - component: {fileID: 1780748345}
   - component: {fileID: 1780748344}
   - component: {fileID: 1780748349}
   - component: {fileID: 1780748350}
@@ -52571,18 +52611,6 @@ MonoBehaviour:
     m_Bits: 64
   _numFound: 0
   _canInteractText: {fileID: 821226198}
---- !u!114 &1780748345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780748343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b26ec79a25551064d93dac51d4abf426, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &1780748346
 CharacterController:
   m_ObjectHideFlags: 0
@@ -52660,7 +52688,6 @@ MonoBehaviour:
   GunSelector: {fileID: 1780748348}
   playerInventory: {fileID: 0}
   AutoReload: 1
-  health: {fileID: 538013295}
 --- !u!114 &1780748350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54031,6 +54058,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1816889781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -56157,6 +56185,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1868207471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -56868,6 +56897,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1891839352
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -57715,6 +57745,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &1920905898
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60325,6 +60356,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &2017278507
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61937,6 +61969,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &2085938960
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62782,6 +62815,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &2103988074
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62950,6 +62984,7 @@ MonoBehaviour:
   healthController: {fileID: 0}
   navMeshAgent: {fileID: 0}
   animator: {fileID: 0}
+  canMove: 1
 --- !u!195 &2109945814
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63702,63 +63737,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1554161176115921225, guid: f9e1a0158e9f7a545a16fa7c2aa7be4e, type: 3}
   m_PrefabInstance: {fileID: 914934209}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2644440865562506881
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 339778544601649620, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_Name
-      value: Demon_default
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 31.500523
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0000019073486
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.791777
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 339778544601649643, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 290e5ff42b2e9af438cf5eb0c6822781, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -63768,5 +63746,4 @@ SceneRoots:
   - {fileID: 1269508874}
   - {fileID: 176180155}
   - {fileID: 1972373943}
-  - {fileID: 2644440865562506881}
   - {fileID: 2137379783}

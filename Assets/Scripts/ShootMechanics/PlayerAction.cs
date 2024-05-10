@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 [DisallowMultipleComponent]
@@ -14,13 +13,7 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private bool AutoReload = true;
     private bool IsReloading = false;
-    public PlayerHealth health;
-    public IDamageable Damageable;
 
-    private void OnEnable()
-    {
-        Damageable.OnDeath += Player_OnDeath;
-    }
 
     private void Update()
     {
@@ -63,9 +56,4 @@ public class PlayerAction : MonoBehaviour
 
     }
 
-    private void Player_OnDeath(Vector3 Position)
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
-    }
 }
