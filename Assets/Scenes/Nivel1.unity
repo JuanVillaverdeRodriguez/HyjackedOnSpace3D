@@ -52828,6 +52828,7 @@ GameObject:
   - component: {fileID: 1780748345}
   - component: {fileID: 1780748344}
   - component: {fileID: 1780748349}
+  - component: {fileID: 1780748350}
   - component: {fileID: 1780748348}
   m_Layer: 0
   m_Name: 'Player '
@@ -52957,6 +52958,30 @@ MonoBehaviour:
   playerInventory: {fileID: 0}
   AutoReload: 1
   health: {fileID: 538013295}
+--- !u!114 &1780748350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780748343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d142883b2e786cb2dbe929ade1479a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1805544424}
+  walkSpeed: 60
+  runSpeed: 90
+  dashSpeed: 300
+  jumpPower: 90
+  gravity: 200
+  lookSpeed: 1000
+  lookXLimit: 90
+  defaultHeight: 20
+  isJumping: 0
+  holdJump: 0
+  pressedJump: 0
 --- !u!4 &1785852129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8969971835649028076, guid: 4e661a4b9cf2fac4dbc610ceb59e77b8, type: 3}

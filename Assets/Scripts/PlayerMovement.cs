@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     /*-------------------------------------------------------------------------------------------*/
     public float jumpPower = 90f;
     public float gravity = 200f;
-    public float lookSpeed = 2000f;
+    public float lookSpeed = 1000f;
     public float lookXLimit = 90f;
     public float defaultHeight = 20f;
 
