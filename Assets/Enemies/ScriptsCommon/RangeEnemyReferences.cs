@@ -16,6 +16,7 @@ public class RangeEnemyReferences : MonoBehaviour
     [HideInInspector] public HealthController healthController;
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public Animator animator;
+    public bool canMove = true;
 
     private void Awake()
     {
@@ -25,5 +26,4 @@ public class RangeEnemyReferences : MonoBehaviour
         enemyShootController = GetComponent<EnemyShootController>();
 
     }
-
 }

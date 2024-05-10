@@ -11,6 +11,7 @@ public class RangeEnemyState_Controller : MonoBehaviour
 {   
     private StateMachine _stateMachine;
 
+
     void Start()
     {
         // Maquina de estados
@@ -23,7 +24,7 @@ public class RangeEnemyState_Controller : MonoBehaviour
         RangeEnemyState_Conditions conditions = new RangeEnemyState_Conditions(enemy);
 
         //Estados
-        var chase = new RangeEnemyState_Chase(enemy.navMeshAgent, enemy.animator);
+        var chase = new RangeEnemyState_Chase(enemy.navMeshAgent, enemy.animator, enemy.canMove);
         var shoot = new RangeEnemyState_Shoot(enemy.navMeshAgent, enemy.animator, enemy.enemyShootController);
         var idle = new RangeEnemyState_Idle(enemy.navMeshAgent, enemy.animator);
 

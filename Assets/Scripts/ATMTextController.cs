@@ -24,6 +24,7 @@ public class ATMTextController : MonoBehaviour
         }
     }
     bool cameraIsCloseEnought() {
+        Debug.Log(Vector3.Distance(cameraTarget.transform.position, transform.position));
         if (Vector3.Distance(cameraTarget.transform.position, transform.position) <= 25.0f)
             return true;
         return false;

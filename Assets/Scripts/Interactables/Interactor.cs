@@ -50,7 +50,7 @@ public class Interactor : MonoBehaviour
             }
         }
         else {
-            //_canInteractText.enabled = false;
+            _canInteractText.enabled = false;
         }
     
     }

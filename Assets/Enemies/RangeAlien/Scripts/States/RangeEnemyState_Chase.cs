@@ -10,18 +10,26 @@ public class RangeEnemyState_Chase : IState
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
     private GameObject _player;
+
+    private bool _canMove;
     private float _updateTargetingDelay = 0.2f;
 
-    public RangeEnemyState_Chase(NavMeshAgent navMeshAgent, Animator animator) {
+    public RangeEnemyState_Chase(NavMeshAgent navMeshAgent, Animator animator, bool canMove) {
         _navMeshAgent = navMeshAgent;
         _animator = animator;
+        _canMove = canMove;
         _player = GameObject.FindWithTag("Player");
     }
 
     public void OnEnter()
     {
         _animator.SetBool("run", true);
-        _navMeshAgent.isStopped = false;
+        
+        if(_canMove)
+            _navMeshAgent.isStopped = false;
+        else
+            _navMeshAgent.isStopped = true;
+
 
     }
 
