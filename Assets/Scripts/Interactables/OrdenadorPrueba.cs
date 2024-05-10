@@ -7,11 +7,11 @@ public class OrdenadorPrueba : MonoBehaviour, Interactable2
     [SerializeField] private string _prompt;
     public GameObject ordenadorCentral;
 
-    string interactMode = "1";
+    string interactMode = "2";
 
     public void Interact(Interactor2 interactor)
     {
-        interactMode = "2";
+        interactMode = "3";
         ordenadorCentral.GetComponent<OrdenadorCentral>().activar();
     }
     public string InteractPrompt()
