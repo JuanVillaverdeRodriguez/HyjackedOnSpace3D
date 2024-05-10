@@ -11,6 +11,8 @@ public class PlayerInventory : MonoBehaviour
     //public PlayerHealth playerHealth;
     [SerializeField]
     public GunSelector gunSelector;
+    [SerializeField]
+    public PlayerHealth playerHealth;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI AmmoText;
 
@@ -23,11 +25,11 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
-        /*
+        
         healthText.SetText(
-            $"{playerHealth.getHealth}"
+            $"{playerHealth.CurrentHealth}"
         );
-        */
+
         AmmoText.SetText(
             $"{gunSelector.ActiveGun.AmmoConfig.CurrentClipAmmo} / "+
             $"{gunSelector.ActiveGun.AmmoConfig.CurrentAmmo}"
