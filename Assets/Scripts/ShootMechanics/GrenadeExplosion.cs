@@ -7,6 +7,7 @@ using UnityEngine;
 public class GrenadeExplosion : MonoBehaviour
 {
     private float explodeTimer = 5f;
+    private Collider collider;
 
     void Start()
     {
@@ -17,6 +18,9 @@ public class GrenadeExplosion : MonoBehaviour
     {
         explodeTimer -= Time.deltaTime;
         if (explodeTimer <= 0) {
+            collider = Instantiate(collider);
+            collider.transform.SetParent(this.gameObject, false);
+            collider.transform.localPosition = this.gameObject.transform.position;
             Destroy(gameObject);
         }
     }
