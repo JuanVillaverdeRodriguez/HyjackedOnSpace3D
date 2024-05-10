@@ -34,7 +34,6 @@ public class GrenadeExplosion : MonoBehaviour
     {
         ContactPoint contactPoint = collision.GetContact(0);
 
-        Debug.Log("EXPLOSION");
         if(contactPoint.otherCollider.TryGetComponent(out IDamageable damageable))
         {
             damageable.TakeDamage(explosionDamage);

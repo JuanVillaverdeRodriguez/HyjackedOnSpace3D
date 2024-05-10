@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     private void Die(Vector3 Position)
     {
+        transform.parent.gameObject.tag = "Untagged";
         Destroy(gameObject);
     }
 

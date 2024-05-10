@@ -10,7 +10,12 @@ public class OpenDoors : MonoBehaviour, Interactable
     private float rate = 9f;
     private float count = 0.0f;
     private bool opening = false;
+    private GameObject enemies;
 
+    private void Awake()
+    {
+        enemies = GameObject.Find("Mapita/Pasillo3/Enemies");
+    }
     private void Update()
     {
         if(opening)
@@ -23,6 +28,7 @@ public class OpenDoors : MonoBehaviour, Interactable
         if (count == 0){
             opening = true;
         }
+        enemies.SetActive(true);
         /*GameObject[] triggers = GameObject.FindGameObjectsWithTag("TriggerSala3");
         if (triggers == null)
         {
