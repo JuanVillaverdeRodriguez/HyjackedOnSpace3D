@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Keypad : MonoBehaviour, Interactable
@@ -11,7 +12,7 @@ public class Keypad : MonoBehaviour, Interactable
 
     private int pressedButton = 0;
 
-    public Canvas keypadGUI;
+    public GameObject keypadGUI;
 
     public TextMeshProUGUI keypadText;
 
@@ -50,7 +51,7 @@ public class Keypad : MonoBehaviour, Interactable
         keypadText.text = "";
     }
     private void openKeypad() {
-        keypadGUI.enabled = true;
+        keypadGUI.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         player.GetComponent<PlayerMovement>().blockMovement();
@@ -61,22 +62,17 @@ public class Keypad : MonoBehaviour, Interactable
     }
 
     public void closeKeypad() {
-        keypadGUI.enabled = false;
+        keypadGUI.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         player.GetComponent<PlayerMovement>().enableMovement();
 
 
     }
-    void Start()
+    public void Start()
     {
-        keypadGUI.enabled = false;
+        keypadGUI.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    void Update()
-    {
-        
     }
 }
