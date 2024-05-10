@@ -21442,6 +21442,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1340420185127758413, guid: d50a3e9b50b5f0f4b9c69fe84036a6ed, type: 3}
   m_PrefabInstance: {fileID: 211027599}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &520462238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520462240}
+  - component: {fileID: 520462239}
+  m_Layer: 0
+  m_Name: SurfaceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &520462239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520462238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719739dda86c42beb9cb2cbc4c293777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Surfaces:
+  - Albedo: {fileID: 2800000, guid: eb5e388e52c40024b8906c20526ff7ca, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 34b0c082c9d004c4396862abef074a85, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 10ffda2f8d80f8c47ae2dc60f9aa7532, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 266ef81647f1aeb489ad3444dcfd4d50, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: cf1dd495ba397f940b87ce3aec646ae4, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 34c474db4710b2a4ab15ebc408735862, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: ccc8a3309edf6ee4380d8d2988042093, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 6e356b17087b9ba4fb28c74bf3478306, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 8f48557740b087543a414c91a8a036e4, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 2e9aa75202e71264f9ab315833e40098, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 713b027d4235c364890fdf9c2e7cc258, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  - Albedo: {fileID: 2800000, guid: 1cdf1cede1edc374a872ce0142ac1d8b, type: 3}
+    Surface: {fileID: 11400000, guid: b80938cb6eb396d529d30c938b0cdb69, type: 2}
+  DefaultSurface: {fileID: 11400000, guid: 176890e23a567ef8c94b545cd2390aa7, type: 2}
+--- !u!4 &520462240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520462238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.32547, y: 1.3602266, z: 40.001785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521051080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074652053159370, guid: dc7c043866b34b24f8d42b1064826ebe, type: 3}
@@ -86001,3 +86071,4 @@ SceneRoots:
   - {fileID: 1245454418}
   - {fileID: 1250017703}
   - {fileID: 1071724939}
+  - {fileID: 520462240}
