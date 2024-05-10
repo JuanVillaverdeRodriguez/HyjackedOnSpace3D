@@ -14,7 +14,6 @@ public class InstantDeath : MonoBehaviour
    
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("COLLISION ENTER");
         if(other.gameObject.CompareTag("Player"))
         {
             Scene currentScene = SceneManager.GetActiveScene();

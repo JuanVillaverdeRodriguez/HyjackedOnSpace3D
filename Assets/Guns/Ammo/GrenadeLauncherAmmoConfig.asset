@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GrenadeLauncherAmmoConfig
   m_EditorClassIdentifier: 
   MaxAmmo: 80
-  ClipSize: 10
+  ClipSize: 2
   CurrentAmmo: 1000
-  CurrentClipAmmo: 991
+  CurrentClipAmmo: 2
+  ReloadSpeed: 4
