@@ -10,7 +10,7 @@ public class AmmoConfigScriptableObject : ScriptableObject, System.ICloneable
 
     public int CurrentAmmo = 120;
     public int CurrentClipAmmo = 30;
-    private float ReloadSpeed = 1f;
+    public float ReloadSpeed = 1f;
 
     public IEnumerator Reload()
     {

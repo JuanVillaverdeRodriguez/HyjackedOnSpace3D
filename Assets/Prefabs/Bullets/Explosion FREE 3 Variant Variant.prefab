@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3654741155788002240, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654741155788002240, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3654741155788002241, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -91,6 +99,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3654741155788002110, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
       insertIndex: 2
       addedObject: {fileID: -3543649208445903428}
+    - targetCorrespondingSourceObject: {fileID: 3654741155788002110, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3956560211492709663}
   m_SourcePrefab: {fileID: 100100000, guid: ac8053bb68b7997419467a34b74fb975, type: 3}
 --- !u!1 &6585563536154205193 stripped
 GameObject:
@@ -109,3 +120,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10cc1e8501269f44af07be872f8701b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionDamage: 20
+--- !u!135 &3956560211492709663
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585563536154205193}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
