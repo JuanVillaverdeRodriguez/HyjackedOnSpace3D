@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing = false;
     private const float DASH_DURATION = 0.2f;
     private const float DASH_COOLDOWN = 2f;
-    private const float MAX_JUMP_HEIGHT = 0.5f;
+    private const float MAX_JUMP_HEIGHT = 0.2f;
     /*-------------------------------------------------------------------------------------------*/
 
     private bool canMove = true;
