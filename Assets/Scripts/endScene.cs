@@ -10,6 +10,8 @@ public class endScene : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            UnityEngine.Cursor.visible = true;
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene(0);
         }
     }
