@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     /*-------------------------------------------------------------------------------------------*/
     public float jumpPower = 90f;
     public float gravity = 200f;
-    public float lookSpeed = 2f;
+    public float lookSpeed = 2000f;
     public float lookXLimit = 90f;
     public float defaultHeight = 20f;
 
@@ -202,10 +202,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canMove)
         {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed* Time.deltaTime;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);    
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed * Time.deltaTime, 0);
         }
     }
 }
