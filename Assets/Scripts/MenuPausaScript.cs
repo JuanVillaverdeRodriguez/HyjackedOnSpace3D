@@ -13,10 +13,11 @@ public class MenuPausaScript : MonoBehaviour
     public void Start()
     {
         MenuPausa.SetActive(false);
+        Pausado = false;
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.H))
         {
 
             Debug.Log("Escape Detectado");
@@ -51,5 +52,10 @@ public class MenuPausaScript : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
